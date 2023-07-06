@@ -1,10 +1,10 @@
 package com.klasha.task.api;
 
+import com.klasha.task.config.FeignConfig;
 import com.klasha.task.dto.responses.ApiResponse;
 import com.klasha.task.dto.responses.CountryCapitalResponse;
 import com.klasha.task.dto.responses.LocationResponse;
 import com.klasha.task.dto.responses.PopulationResponse;
-import com.klasha.task.config.FeignConfig;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;

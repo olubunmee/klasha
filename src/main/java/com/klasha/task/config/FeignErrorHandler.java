@@ -1,7 +1,7 @@
 package com.klasha.task.config;
 
-import com.klasha.task.exception.KlashaException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.klasha.task.exception.KlashaException;
 import feign.Response;
 import feign.codec.ErrorDecoder;
 import lombok.RequiredArgsConstructor;

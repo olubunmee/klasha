@@ -1,9 +1,8 @@
 package com.klasha.task.services.country;
 
 
-import com.klasha.task.api.ExchangeApi;
-
 import com.klasha.task.api.CountryApi;
+import com.klasha.task.api.ExchangeApi;
 import com.klasha.task.dto.PopulationCount;
 import com.klasha.task.dto.responses.CountryResponse;
 import com.klasha.task.dto.responses.CurrencyResponse;

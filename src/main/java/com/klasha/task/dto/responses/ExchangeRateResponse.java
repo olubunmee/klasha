@@ -1,7 +1,9 @@
 package com.klasha.task.dto.responses;
 
 
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 

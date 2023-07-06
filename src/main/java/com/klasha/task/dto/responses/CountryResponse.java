@@ -1,7 +1,9 @@
 package com.klasha.task.dto.responses;
 
 
-import lombok.*;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
 @Setter
 @Getter

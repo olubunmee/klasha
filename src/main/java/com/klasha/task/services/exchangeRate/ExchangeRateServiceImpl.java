@@ -1,8 +1,8 @@
 package com.klasha.task.services.exchangeRate;
 
 import com.klasha.task.api.ExchangeApi;
-import com.klasha.task.dto.responses.CurrencyResponse;
 import com.klasha.task.dto.requests.ExchangeRateRequest;
+import com.klasha.task.dto.responses.CurrencyResponse;
 import com.klasha.task.dto.responses.ExchangeRateResponse;
 import com.klasha.task.exception.KlashaException;
 import com.klasha.task.utils.CsvUtil;

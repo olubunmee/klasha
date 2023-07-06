@@ -1,8 +1,8 @@
 package com.klasha.task.api;
 
+import com.klasha.task.config.FeignConfig;
 import com.klasha.task.dto.responses.ApiResponse;
 import com.klasha.task.dto.responses.CountryStateResponse;
-import com.klasha.task.config.FeignConfig;
 import com.klasha.task.utils.Constants;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;

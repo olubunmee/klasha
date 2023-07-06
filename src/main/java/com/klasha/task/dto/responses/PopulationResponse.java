@@ -1,9 +1,9 @@
 package com.klasha.task.dto.responses;
 
 
-import com.klasha.task.dto.PopulationCount;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.klasha.task.dto.PopulationCount;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
