@@ -1,13 +1,13 @@
 package com.klasha.task.dto.responses;
 
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Setter
 @Getter
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class CountryResponse {
 
     private String capital;

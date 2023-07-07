@@ -1,7 +1,5 @@
 package com.klasha.task.utils;
 
-import org.springframework.beans.factory.annotation.Value;
-
 import java.util.List;
 
 public class Constants {

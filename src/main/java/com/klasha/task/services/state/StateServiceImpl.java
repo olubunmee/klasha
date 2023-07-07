@@ -23,7 +23,7 @@ public class StateServiceImpl implements StateService {
                 .peek(stateResponse -> {
                     String stateName = stateResponse.getName().equalsIgnoreCase("Lagos State") ? "Lagos" : stateResponse.getName();
                     List<String> cities = cityApi.getCitiesData(country, stateName).getData();
-                    stateResponse.setCites(cities);
+                    stateResponse.setCities(cities);
                 })
                 .toList();
     }

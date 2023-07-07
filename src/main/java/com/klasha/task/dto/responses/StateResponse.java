@@ -20,5 +20,9 @@ public class StateResponse {
     @JsonProperty("state_code")
     private String code;
 
-    private List<String> cites;
+    private List<String> cities;
+
+    public StateResponse(String name) {
+        this.name = name;
+    }
 }

@@ -18,4 +18,8 @@ public class TopCityResponse {
     private String country;
 
     private List<CityPopulationCount> populationCounts;
+
+    public TopCityResponse(String city) {
+        this.city = city;
+    }
 }
