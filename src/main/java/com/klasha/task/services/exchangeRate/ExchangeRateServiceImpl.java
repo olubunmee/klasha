@@ -22,12 +22,13 @@ public class ExchangeRateServiceImpl implements ExchangeRateService {
     private final ExchangeApi exchangeApi;
 
     @Override
-    public ExchangeRateResponse getExchange(ExchangeRateRequest exchangeRateRequest) throws KlashaException {
+    public ExchangeRateResponse getExchange(ExchangeRateRequest exchangeRateRequest) {
         CurrencyResponse currencyResponse = exchangeApi.getCurrencyData(exchangeRateRequest.getCountry()).getData();
 
         String pair = currencyResponse.getCurrency().concat("-").concat(exchangeRateRequest.getTargetCurrency());
         Double rate = csvUtil.getRate(pair.toUpperCase());
-        if (rate == null) ExchangeRateResponse.builder()
+        if (rate == null)
+            return ExchangeRateResponse.builder()
                 .message("No Exchange Rate for Currency pair ( " + pair + " )")
                 .build();
 
