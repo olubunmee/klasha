@@ -38,7 +38,7 @@ public class CsvUtil {
         return exchangeRates;
     }
 
-    public double getRate(String pair) {
+    public Double getRate(String pair) {
         return readCsv().getOrDefault(pair, null);
     }
 

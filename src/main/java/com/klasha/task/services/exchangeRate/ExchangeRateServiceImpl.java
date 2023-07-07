@@ -27,7 +27,9 @@ public class ExchangeRateServiceImpl implements ExchangeRateService {
 
         String pair = currencyResponse.getCurrency().concat("-").concat(exchangeRateRequest.getTargetCurrency());
         Double rate = csvUtil.getRate(pair.toUpperCase());
-        if (rate == null) throw new KlashaException("Exchange rate not available for " + pair);
+        if (rate == null) ExchangeRateResponse.builder()
+                .message("No Exchange Rate for Currency pair ( " + pair + " )")
+                .build();
 
         BigDecimal amount = exchangeRateRequest.getAmount().multiply(valueOf(rate));
         BigDecimal roundedAmount = amount.setScale(2, UP);
