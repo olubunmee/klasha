@@ -23,7 +23,7 @@ public class ExchangeRateServiceImpl implements ExchangeRateService {
 
     @Override
     public ExchangeRateResponse getExchange(ExchangeRateRequest exchangeRateRequest) throws KlashaException {
-        CurrencyResponse currencyResponse = exchangeApi.getCurrencyData(exchangeRateRequest.getSourceCountry()).getData();
+        CurrencyResponse currencyResponse = exchangeApi.getCurrencyData(exchangeRateRequest.getCountry()).getData();
 
         String pair = currencyResponse.getCurrency().concat("-").concat(exchangeRateRequest.getTargetCurrency());
         Double rate = csvUtil.getRate(pair.toUpperCase());
