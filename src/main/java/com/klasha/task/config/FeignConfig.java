@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class FeignConfig {
 
-
     @Bean
     Logger.Level feignLoggerLevel() {
         if (log.isDebugEnabled()) return Logger.Level.FULL;
