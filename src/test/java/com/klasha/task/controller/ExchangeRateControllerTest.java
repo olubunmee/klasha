@@ -1,9 +1,7 @@
 package com.klasha.task.controller;
 
 import com.klasha.task.dto.requests.ExchangeRateRequest;
-import com.klasha.task.dto.responses.ApiResponse;
 import com.klasha.task.dto.responses.ExchangeRateResponse;
-import com.klasha.task.exception.KlashaException;
 import com.klasha.task.services.exchangeRate.ExchangeRateService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,9 +12,9 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import java.math.BigDecimal;
 
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 public class ExchangeRateControllerTest {
 
