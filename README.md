@@ -11,4 +11,4 @@ also available on postman https://documenter.getpostman.com/view/21595274/2s93zG
 $ mvn spring-boot:run
 # Configuration
 To properly run this application, the csv url should be added to the environment variables e.g
-CSV_FILE=
+CSV_FILE=https://drive.google.com/file/d/1paeSSkqcbry7zg7LD7TNeLPQ0w_rW65E/view?usp=sharing
